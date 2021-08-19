@@ -11,7 +11,7 @@ request.onupgradeneeded = function (e) {
   db = e.target.result;
 
   if (db.objectStoreNames.length === 0) {
-    db.createObjectStore('BudgetTracker', { autoIncrement: true });
+    db.createObjectStore('pending', { autoIncrement: true });
   }
 };
 
